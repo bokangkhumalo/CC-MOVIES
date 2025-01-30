@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 23px;
+  background-color: #00704a; /* Starbucks green */
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  color: rgb(0, 0, 0);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensure the header is above other content */
+}
+
+.header-title-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-title {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.header .search-bar {
+  margin: 0;
+}
+
+/* Add padding to the body to account for the fixed header */
+body {
+  padding-top: 80px; /* Adjust this value based on the height of your header */
+}
